@@ -1,0 +1,292 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="~(0oNY^5?4+u3{^hBEXJ">LeafTemp1</variable>
+    <variable id="/v7IHZ8PB4muXt$nndum">SVP1</variable>
+    <variable id="[@fxy4B}z|^aG+5FQR_q">AVP1</variable>
+    <variable id="A@Vd(~${G8SW@A,hk|^u">VPD1</variable>
+  </variables>
+  <block type="on_ext" id="9}|Phu=5#,~I;@S;1DQq" x="-2237" y="-1137">
+    <mutation xmlns="http://www.w3.org/1999/xhtml" items="2"></mutation>
+    <field name="CONDITION">any</field>
+    <field name="ACK_CONDITION"></field>
+    <value name="OID0">
+      <shadow type="field_oid" id="GuMIrWAlXIM(8-yF}x~b">
+        <field name="oid">0_userdata.0.Temp_Hum.Hygrometer.GrowBox_1.Actual_Temperature_Sensor_1</field>
+      </shadow>
+    </value>
+    <value name="OID1">
+      <shadow type="field_oid" id="mAH,-21qxg5}?W_fw$%|">
+        <field name="oid">0_userdata.0.Temp_Hum.Hygrometer.GrowBox_1.Actual_Humidity_Sensor_1</field>
+      </shadow>
+    </value>
+    <statement name="STATEMENT">
+      <block type="variables_set" id="ZqS``qawlB2JP!~2Lf-2">
+        <field name="VAR" id="~(0oNY^5?4+u3{^hBEXJ">LeafTemp1</field>
+        <value name="VALUE">
+          <block type="math_rndfixed" id="}?atY)1Ic;;,5N!c:8sB">
+            <field name="n">2</field>
+            <value name="x">
+              <shadow type="math_number" id=":t9S8;mBu_:mP5y,NfP8">
+                <field name="NUM">3.1234</field>
+              </shadow>
+              <block type="math_arithmetic" id="%LF#y;UDWChFRq,$p7]c">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id="+`q[5#nN{ULF[/v0J`Yl">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="get_value" id="v`7VZ`Z-!$@pBDYi7{/4">
+                    <field name="ATTR">val</field>
+                    <field name="OID">0_userdata.0.Temp_Hum.Hygrometer.GrowBox_1.Actual_Temperature_Sensor_1</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="4i:*aK2}q*XixV#@-6BR">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="doItIkm8q]=(+^vvOzC@">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <shadow type="math_number" id="{MhB1S9D7=w^:K7Fl4a4">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="get_value" id="HgO=QuL4u0GB-u])K`ZS">
+                        <field name="ATTR">val</field>
+                        <field name="OID">0_userdata.0.Temp_Hum.Hygrometer.GrowBox_1.Actual_Temperature_Sensor_1</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="R?,10TF~J:[nL$`lX81W">
+                        <field name="NUM">0.12</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="a1HyU}P-Mn8ga~n?p)!:">
+                        <field name="OP">DIVIDE</field>
+                        <value name="A">
+                          <shadow type="math_number" id="4^6TdZui,B2YDzDKnFds">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="get_value" id="+3%Up(r!-}QM0Nq$U1~6">
+                            <field name="ATTR">val</field>
+                            <field name="OID">0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.VPDLEAFCORRECTION</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="-IU#iHq`oJ?tO86ciII8">
+                            <field name="NUM">100</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="2_-j05WWHsehJyjmE7IF">
+            <field name="VAR" id="/v7IHZ8PB4muXt$nndum">SVP1</field>
+            <value name="VALUE">
+              <block type="math_rndfixed" id="^iSUZ#nx|hg4-@s}bUC(">
+                <field name="n">2</field>
+                <value name="x">
+                  <shadow type="math_number" id="ky[RH;GGch7Kfn-J9Zm)">
+                    <field name="NUM">3.1234</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="ZIG:6k4Ip=CySkC^Rbb?">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <shadow type="math_number" id=",4[X,g*;a)C%k4L%}BXE">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="math_number" id="`wqRq{mM|EPvP{]otcKp">
+                        <field name="NUM">0.6108</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="Y#h3P=)Fp)MT,M.x1;8a">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="math_single" id="r`c32z,tG|#.=!HWu`[o">
+                        <field name="OP">EXP</field>
+                        <value name="NUM">
+                          <shadow type="math_number" id="FBCAUECD2+DCqZc@w),c">
+                            <field name="NUM">9</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="epPEkP:0U5Ask3?0-!-k">
+                            <field name="OP">DIVIDE</field>
+                            <value name="A">
+                              <shadow type="math_number" id="]@b`{,_hGWy}:~qVL}H5">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="x-6Im.tv#PoF.nvu.A8#">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="MZcW]3$:YO]uRxpG7_tn">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_number" id="!s)oSmXAe=mQ9EiY]^Is">
+                                    <field name="NUM">17.27</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="RmNsI-0bjw0l[TMf$.`*">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="#@k*g4_Y.ia)(;mTEWPO">
+                                    <field name="VAR" id="~(0oNY^5?4+u3{^hBEXJ">LeafTemp1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="a3^Oat85S/3,;B}Myt#@">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="CZh7YYSPyv$x(6.OYqR+">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="R5@Tu.?Z${5YS?m,sTY9">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="0xWH,]5%=#bfi5@kZ@T~">
+                                    <field name="VAR" id="~(0oNY^5?4+u3{^hBEXJ">LeafTemp1</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="XtJO4))zZ.7o_F%HC,DC">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_number" id="eoaT#ZnQu5,C7d[Ic,BG">
+                                    <field name="NUM">237.3</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="S8RNCL-DQdPeD-aT!@^Z">
+                <field name="VAR" id="[@fxy4B}z|^aG+5FQR_q">AVP1</field>
+                <value name="VALUE">
+                  <block type="math_rndfixed" id="Sz!V]N{Wv)2etSc}V^g`">
+                    <field name="n">2</field>
+                    <value name="x">
+                      <shadow type="math_number" id="b(@$Q:s7!OP4I?fi]~|l">
+                        <field name="NUM">3.1234</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="H8^C#V{mA/*tm,cjN9h6">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <shadow type="math_number" id="LV.t2kel=wz1H~ct?Azo">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="math_arithmetic" id=";1?D~Lu[|_50qd*aiO|x">
+                            <field name="OP">DIVIDE</field>
+                            <value name="A">
+                              <shadow type="math_number" id="eoHAy0lH_(Qh@UXXM`Qn">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="get_value" id="UM/]c=@4s1k[YA~G@6h0">
+                                <field name="ATTR">val</field>
+                                <field name="OID">0_userdata.0.Temp_Hum.Hygrometer.GrowBox_1.Actual_Humidity_Sensor_1</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="PpiN_j_hkKXN[Yy-y*7p">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_number" id="A/rN]cRh9UOR+G2o?UUn">
+                                <field name="NUM">100</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="#.:n2$df3698;V0|8V[1">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="Aj.$-YsFA*)LFc.*FE=d">
+                            <field name="VAR" id="/v7IHZ8PB4muXt$nndum">SVP1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="iG^lZj:eusE7{@8u|[|7">
+                    <field name="VAR" id="A@Vd(~${G8SW@A,hk|^u">VPD1</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="zrb]pV]vaQsV@-dJFDr)">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <shadow type="math_number" id="^HbK2kQ.W]4v1yO4dmtL">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="c=c2F(zby=ty3(RF944$">
+                            <field name="VAR" id="/v7IHZ8PB4muXt$nndum">SVP1</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="$[MpdtpDZqfk~OcjQ7?%">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="x1k_bONP1Pp`?}/+-)w{">
+                            <field name="VAR" id="[@fxy4B}z|^aG+5FQR_q">AVP1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="update" id="*fG@%,=92SzOa^hnL/Xg">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                        <field name="OID">0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.SVP1</field>
+                        <field name="WITH_DELAY">FALSE</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id="V!.WSn3$nd7L;]bk?POp">
+                            <field name="VAR" id="/v7IHZ8PB4muXt$nndum">SVP1</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="update" id="w]QGoV*Bi}:4v(E.##fa">
+                            <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                            <field name="OID">0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.AVP1</field>
+                            <field name="WITH_DELAY">FALSE</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="~oEx#dBkTUF4=-dis0|P">
+                                <field name="VAR" id="[@fxy4B}z|^aG+5FQR_q">AVP1</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="update" id="*a}W]|)s`0~dE82S#UR`">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" delay_input="false"></mutation>
+                                <field name="OID">0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.VPD1</field>
+                                <field name="WITH_DELAY">FALSE</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="`;I~flCvPlMXtq-Y#Wjz">
+                                    <field name="VAR" id="A@Vd(~${G8SW@A,hk|^u">VPD1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
