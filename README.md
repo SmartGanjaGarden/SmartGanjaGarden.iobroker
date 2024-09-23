@@ -1,6 +1,5 @@
 # SmartGanjaGarden.iobroker
----
-
+# Blockly scripts:
 <details open>
   <summary>How to calculate the vapor pressure deficit (VPD)</summary><br>
   
