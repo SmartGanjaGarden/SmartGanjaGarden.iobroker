@@ -1,0 +1,145 @@
+{
+  "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1": {
+    "common": {
+      "name": "VPD_1"
+    },
+    "type": "folder",
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1727094222251,
+    "_id": "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1"
+  },
+  "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.AVP1": {
+    "common": {
+      "name": "AVP1",
+      "desc": "Manually created",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1727094825049,
+    "_id": "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.AVP1",
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.AVP2": {
+    "common": {
+      "name": "AVP2",
+      "desc": "Manually created",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1727094837608,
+    "_id": "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.AVP2",
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.SVP1": {
+    "common": {
+      "name": "SVP1",
+      "desc": "Manually created",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1727094848966,
+    "_id": "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.SVP1",
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.SVP2": {
+    "common": {
+      "name": "SVP2",
+      "desc": "Manually created",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1727094885880,
+    "_id": "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.SVP2",
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.VPD1": {
+    "common": {
+      "name": "VPD1",
+      "desc": "Manually created",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1727094909070,
+    "_id": "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.VPD1",
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.VPD2": {
+    "common": {
+      "name": "VPD2",
+      "desc": "Manually created",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1727094924484,
+    "_id": "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.VPD2",
+    "val": 0,
+    "ack": true
+  },
+  "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.VPDLEAFCORRECTION": {
+    "common": {
+      "name": "VPDLEAFCORRECTION",
+      "desc": "Manually created",
+      "role": "state",
+      "type": "number",
+      "read": true,
+      "write": true,
+      "def": 0
+    },
+    "type": "state",
+    "native": {},
+    "from": "system.adapter.admin.0",
+    "user": "system.user.admin",
+    "ts": 1727094965364,
+    "_id": "0_userdata.0.GrowBoxes.GrowBox_1.VPD_1.VPDLEAFCORRECTION",
+    "val": 0,
+    "ack": true
+  }
+}
